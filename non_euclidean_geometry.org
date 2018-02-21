@@ -1,0 +1,9 @@
+* Overview
+
+Perhaps the most famous, and certainly the longest used textbook in any field is Euclid's Elements dating back to around 300 BC and used as a standard textbook for school students right up until the twentieth century. In the first known example of axiomatic mathematics, Euclid lays out five axioms for plane geometry and gives a thorough treatment, deducing many properties of geometry from only from these five axioms and basic logical reasoning. The first four axioms have been generally considered to be straight forward, but the fifth axiom - the so called "Parallel Postulate" - was a source of considerable consternation for many centuries. Mathematicians tried unsuccessfully to prove the fifth postulate from the other four axioms until in the nineteenth century, geometries satisfying the first four axioms but not the fifth were discovered. These are the so-called "Non Euclidean Geometries". Some presentation ideas include:
+
+1. Discuss the five axioms of spherical geometry. What are the points, straight lines and circles? In what sense can spherical geometry be considered geometry?
+
+2. Do the same for hyperbolic geometry.
+
+3. Discuss how Non Euclidean Geometry influenced the philosophy of abstract mathematics and it's relation to the physical world. In particular, do we live in a Euclidean or a Non Euclidean universe? Is Non Euclidean Geometry a mathematical curiosity, or is it somehow "real"?
