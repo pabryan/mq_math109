@@ -1,0 +1,96 @@
+#+TITLE: The Fifth Postulate
+#+BEAMER_HEADER: \subtitle{Math109 Macquarie University}
+#+AUTHOR: Paul Bryan
+#+EMAIL: pabryan@gmail.com
+#+DATE: May 22 2018
+
+#+SETUPFILE: ~/.emacs.d/org-templates/bibliography.org
+
+#+OPTIONS: H:2 toc:t
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [presentation]
+#+BEAMER_THEME: Boadilla
+#+LaTeX_HEADER: \AtBeginSection[]{\begin{frame}\frametitle{Table of Contents}\tableofcontents[currentsection]\end{frame}}
+
+#+LaTeX_HEADER: \input{local_definitions}
+
+* Euclidean Geometry
+** Euclid's Elements
+**** Image
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+[[file:img/euclid_papyrus.jpg]]
+
+\tiny By Euclid - http://www.math.ubc.ca/~cass/Euclid/papyrus/tha.jpg, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1259734
+
+**** Text
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+- Alexandria, Egypt Circa 300bc
+- 13 books on plane and solid Euclidean geometry, elementary number theory, and incommensurable lines (\(\sqrt{2}\) is irrational!)
+
+** Euclid's Elements
+**** Image
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+[[file:img/euclid_billingsley.jpg]]
+
+\tiny Image by Charles Thomas-Stanford - Early editions of Euclid’s Elements, by Charles Thomas-Stanford. Plate X., Public Domain, https://commons.wikimedia.org/w/index.php?curid=144950
+
+**** Text
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+- Standard text until the 20th Century
+
+** On Euclid's Elements
+
+#+BEGIN_QUOTE
+Euclid's Elements subsequently became the basis of all mathematical education, not only in the Roman and Byzantine periods, but right down to the mid-20th century, and it could be argued that it is the most successful textbook ever written.
+
+-- Encyclopedia of Ancient Greece by Nigel Guy Wilson.
+#+END_QUOTE
+\pause
+
+#+BEGIN_QUOTE
+You never can make a lawyer if you do not understand what demonstrate means; and I left my situation in Springfield, went home to my father's house, and stayed there till I could give any proposition in the six books of Euclid at sight.
+
+-- Abraham Lincoln, The Life of Abraham Lincoln by Henry Ketcham.
+#+END_QUOTE
+\pause
+
+#+BEGIN_QUOTE
+At the age of 12 I experienced a second wonder of a very different kind: a booklet dealing with Euclidean plane geometry that came into my hands at the beginning of a school year.
+
+-- Albert Einstein: Philosopher-Scientist, edited by Paul Arthur Schilpp, 1951
+#+END_QUOTE
+
+** Axioms of Euclidean Geometry
+
+ 1. To draw a straight line from any point to any point. \pause
+ 2. To produce [extend] a finite straight line continuously in a straight line. \pause
+ 3. To describe a circle with any centre and distance [radius]. \pause
+ 4. That all right angles are equal to one another. \pause
+ 5. The parallel postulate: That, if a straight line falling on two straight lines make the interior angles on the same side less than two right angles, the two straight lines, if produced indefinitely, meet on that side on which are the angles less than the two right angles.
+
+** The First Four Axioms
+** A Model for Euclidean Geometry - Descarte
+** The fifth Postulate
+* Spherical and Projective Geometry
+** Projective Geometry
+** Spherical Geometry
+** A Model for Projective Geometry
+** A Model of Spherical Geometry
+* Hyperbolic Geometry
+** Models of Hyperbolic Geometry
+* Differential Geometry of the Sphere
+** Length and Angle
+** Calculus on the Sphere
+** Geodesics - aka straight lines
