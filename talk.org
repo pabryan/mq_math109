@@ -86,9 +86,131 @@ At the age of 12 I experienced a second wonder of a very different kind: a bookl
  4. That all right angles are equal to one another. \pause
  5. *The parallel postulate*: That, if a straight line falling on two straight lines make the interior angles on the same side less than two right angles, the two straight lines, if produced indefinitely, meet on that side on which are the angles less than the two right angles.
 
-** The First Four Axioms
+** Axiom one
+
+**** Image
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+\begin{center}
+\begin{figure}
+\includegraphics[width=.4\linewidth]{img/euclid_axiom1.png}
+\caption{To draw a straight line from any point to any point.}
+\end{figure}
+\end{center}
+
+**** Text
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+Given any two distinct points, there *exists* a *unique* straight line joining the two points.
+
+** Axiom two
+
+**** Image
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+\begin{center}
+\begin{figure}
+\includegraphics[width=.4\linewidth]{img/euclid_axiom2.png}
+\caption{To produce [extend] a finite straight line continuously in a straight line.}
+\end{figure}
+\end{center}
+
+**** Text
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+Given any line $L$ with endpoints $p, q$ there *exists* a line $L'$ with one end point $p$ and containing $q$ not as an endpoint. Extensions are *unique* in that if $L''$ is also an extension, either $L'$ lies on $L''$ or vice versa. Therefore there is a *unique* unbounded line $\bar{L}$ containing all such extensions.
+
+** Axiom three
+
+**** Image
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+\begin{center}
+\begin{figure}
+\includegraphics[width=.4\linewidth]{img/euclid_axiom3.png}
+\caption{To describe a circle with any centre and distance [radius].}
+\end{figure}
+\end{center}
+
+**** Text
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+Given any point $p$ and positive number $r$, there *exists* a *unique* circle centred on $p$ with radius $r$.
+
+** Axiom four
+
+**** Image
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+\begin{center}
+\begin{figure}
+\includegraphics[width=.4\linewidth]{img/euclid_axiom4.png}
+\caption{That all right angles are equal to one another.}
+\end{figure}
+\end{center}
+
+**** Text
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+*Definition*: A right angle is the angle formed at the intersection of two lines such that all four angles are equal.
+
+There *exists* right angles and they are *unique* up to congruence (translation and rotation).
+
+** The Fifth Postulate
+
+**** Image
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+\begin{center}
+\begin{figure}
+\includegraphics[width=.4\linewidth]{img/euclid_axiom5.png}
+\caption{That, if a straight line falling on two straight lines make the interior angles on the same side less than two right angles, the two straight lines, if produced indefinitely, meet on that side on which are the angles less than the two right angles.}
+\end{figure}
+\end{center}
+
+**** Text
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+Given any line $L$ and point $p$ not on $L$, there *exists* a *unique* line passing through $p$ and not intersecting $L$.
+
+** Hilbert's Axioms
+
+- Three /primitive/ notions:
+  1. point
+  2. line
+  3. plane \pause
+- Three /primitive/ relations:
+  1. Betweeness of points
+  2. Containment of points on lines, points on planes and lines on planes
+  3. Congruence of lines, angles \pause
+- Twenty axioms
+  - 8 axioms of incidence: e.g any two points lie on a line
+  - 4 axioms of order: e.g. if a point lies between two other points, then all three points lie on a line
+  - 6 axioms of congruence: e.g. triangles with two congruent sides and a congruent angle are congruent
+  - 1 axiom of parallels: For any line $L$ and point $p$ not on the line, there is a unique parallel line $Q$ in the plane determined by $L$ and $a$
+  - 2 axioms of continuity: e.g. For a line $L = pq$, and a point $r$ on the line segment, there exists a natural number $n$ such that joining $pr$ contiguously $n$ times extends beyond $q$
+
 ** A Model for Euclidean Geometry - Descarte
-** The fifth Postulate
 * Spherical and Projective Geometry
 ** Projective Geometry
 ** Spherical Geometry
