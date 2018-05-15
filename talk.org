@@ -1,9 +1,7 @@
 #+TITLE: The Fifth Postulate
 #+BEAMER_HEADER: \subtitle{Math109 Macquarie University}
 #+AUTHOR: Paul Bryan
-#+EMAIL: pabryan@gmail.com
-#+DATE: May 22 2018
-
+#+DATE:
 #+SETUPFILE: ~/.emacs.d/org-templates/bibliography.org
 
 #+OPTIONS: H:2 toc:t
@@ -14,6 +12,7 @@
 
 #+LaTeX_HEADER: \input{local_definitions}
 
+#+LaTeX_HEADER: \titlegraphic{\includegraphics[width=\textwidth,height=.5\textheight]{img/multipostulate.jpg}}
 * Euclidean Geometry
 ** Euclid's Elements in Antiquity
 **** Image
