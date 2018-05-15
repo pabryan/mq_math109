@@ -190,7 +190,13 @@ There *exists* right angles and they are *unique* up to congruence (translation 
      :BEAMER_col: 0.5
      :END:
 
-Given any line $L$ and point $p$ not on $L$, there *exists* a *unique* line passing through $p$ and not intersecting $L$.
+Given any line $L$ and point $p$ not on $L$, there *exists* a *unique* line passing through $p$ and not intersecting $L$ (Playfair's axiom).
+
+** Limitations of Euclid
+
+- Many notions like extending lines, congruence, a point lying on a line etc. are not defined. \pause
+- The axioms are supposed to determine everything through *logical deduction only*. Therefore we must be careful not to let our intuition of what geometric concepts are *supposed to mean* get in the way of rigorous deduction. \pause
+- One must be able to say at all times--instead of points, straight lines, and planes--tables, chairs, and beer mugs -- David Hilbert
 
 ** Hilbert's Axioms
 
