@@ -369,8 +369,34 @@ Riemann has shewn that as there are different kinds of lines and surfaces, so th
 
 -- Clifford
 
-** A Model of Spherical Geometry
-** A Model of Hyperbolic Geometry
+** Spherical Geometry
+
+The sphere $\sphere$ is the set of triples,
+\[
+\sphere = \{(x, y, z) \in \RR^3 : x^2 + y^2 + z^2 = 1\}.
+\]
+
+\pause
+
+- *Points*: Any such triple. E.g. \((1, 0, 0)\), \((\tfrac{1}{2}, \frac{1}{2}, \frac{1}{\sqrt{2}})\). \pause
+- *Lines*: Great circles: rotations of the equator or equivalently intersections of planes through the origin with the sphere. \pause
+- *Circles*: Intersections of arbitrary planes with the sphere. \pause
+- *Right Angles*: Formed by lines with perpendicular tangents, or equivalently by a great circle and the great circle obtained by a \(\pi/2\)-rotation
+
+** Hyperbolic Geometry
+
+The hyperbolic plane $\HH$ is the set of triples,
+\[
+\HH = \{(x, y, z) \in \RR^3 : x^2 + y^2 - z^2 = -1, z > 0\}.
+\]
+
+\pause
+
+- *Points*: Any such triple. E.g. \((0, 0, 1)\), \((\tfrac{1}{2}, \frac{1}{2}, \sqrt{\frac{3}{2}})\). \pause
+- *Lines*: Intersections of planes through the origin with \(\HH\). \pause
+- *Circles*: Intersections of planes /not/ passing through the origin with \(\HH\). \pause
+- *Right Angles*: Formed by lines with perpendicular tangents
+
 * Differential Geometry
 ** Length and Angle
 ** Calculus on the Sphere
