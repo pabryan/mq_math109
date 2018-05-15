@@ -326,14 +326,52 @@ t_1 = C - AD/B, \quad t_2 = -D/B.
 \includegraphics[height=0.8\textheight]{img/euclid_axiom5_descartes_proof.png}
 \end{figure}
 
-* Spherical and Projective Geometry
-** Projective Geometry
-** Spherical Geometry
-** A Model for Projective Geometry
+* Non Euclidean Geometry
+** Attempts to Prove the Fifth Postulate
+- Ptomely (Proclus showed Ptolemy implicitly used Playfair's postulate)
+- Proclus \pause
+- al-Gauhary (another implicit assumption) \pause
+- Wallis (/explicitly/ assumed every figure is similar to a figure of arbitrary size which turns out to be equivalent to the fifth postulate!) \pause
+- Saccheri
+  - Showed that if lines can be extended infinitely, then parallels exist
+  - Derived seemingly counter-intuitive statements from the assumption that parallels are not unique but could not show any contradiction \pause
+- Legendre (same assumption as al-Gauhary) \pause
+
+** The Founders of Non Euclidean Geometry
+
+#+BEGIN_quote
+The boldness of his challenge and its successful outcome have inspired mathematicians and scientists in general to challenge other 'axioms' or accepted 'truths', for example the 'law' of causality which, for centuries, have seemed as necessary to straight thinking as Euclid's postulate appeared until Lobachevsky discarded it. The full impact of the Lobachevskian method of challenging axioms has probably yet to be felt. It is no exaggeration to call Lobachevsky the Copernicus of Geometry, for geometry is only a part of the vaster domain which he renovated; it might even be just to designate him as a Copernicus of all thought.
+#+END_quote
+
+-- E. T. Bell
+
+\pause
+
+#+BEGIN_quote
+You must not attempt this approach to parallels. I know this way to the very end. I have traversed this bottomless night, which extinguished all light and joy in my life. I entreat you, leave the science of parallels alone...Learn from my example."
+#+END_quote
+
+-- Farkas Bolyai to his son János Bolyai
+
+** The Founders of Non Euclidean Geometry
+
+#+BEGIN_quote
+The assumption that (in a triangle) the sum of the three angles is less than $180^{\circ}$ leads to a curious geometry, quite different from ours, but thoroughly consistent, which I have developed to my entire satisfaction.
+#+END_quote
+
+-- Gauss
+
+\pause
+
+#+BEGIN_quote
+Riemann has shewn that as there are different kinds of lines and surfaces, so there are different kinds of space of three dimensions; and that we can only find out by experience to which of these kinds the space in which we live belongs. In particular, the axioms of plane geometry are true within the limits of experiment on the surface of a sheet of paper, and yet we know that the sheet is really covered with a number of small ridges and furrows, upon which (the total curvature not being zero) these axioms are not true. Similarly, he says although the axioms of solid geometry are true within the limits of experiment for finite portions of our space, yet we have no reason to conclude that they are true for very small portions; and if any help can be got thereby for the explanation of physical phenomena, we may have reason to conclude that they are not true for very small portions of space.
+#+END_quote
+
+-- Clifford
+
 ** A Model of Spherical Geometry
-* Hyperbolic Geometry
-** Models of Hyperbolic Geometry
-* Differential Geometry of the Sphere
+** A Model of Hyperbolic Geometry
+* Differential Geometry
 ** Length and Angle
 ** Calculus on the Sphere
 ** Geodesics - aka straight lines
