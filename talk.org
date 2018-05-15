@@ -337,7 +337,7 @@ t_1 = C - AD/B, \quad t_2 = -D/B.
   - Derived seemingly counter-intuitive statements from the assumption that parallels are not unique but could not show any contradiction \pause
 - Legendre (same assumption as al-Gauhary) \pause
 
-** The Founders of Non Euclidean Geometry
+** The Founders of Non Euclidean Geometry : Lobachevsky
 
 #+BEGIN_quote
 The boldness of his challenge and its successful outcome have inspired mathematicians and scientists in general to challenge other 'axioms' or accepted 'truths', for example the 'law' of causality which, for centuries, have seemed as necessary to straight thinking as Euclid's postulate appeared until Lobachevsky discarded it. The full impact of the Lobachevskian method of challenging axioms has probably yet to be felt. It is no exaggeration to call Lobachevsky the Copernicus of Geometry, for geometry is only a part of the vaster domain which he renovated; it might even be just to designate him as a Copernicus of all thought.
@@ -345,7 +345,7 @@ The boldness of his challenge and its successful outcome have inspired mathemati
 
 -- E. T. Bell
 
-\pause
+** The Founders of Non Euclidean Geometry : Bolyai
 
 #+BEGIN_quote
 You must not attempt this approach to parallels. I know this way to the very end. I have traversed this bottomless night, which extinguished all light and joy in my life. I entreat you, leave the science of parallels alone...Learn from my example."
@@ -353,7 +353,7 @@ You must not attempt this approach to parallels. I know this way to the very end
 
 -- Farkas Bolyai to his son János Bolyai
 
-** The Founders of Non Euclidean Geometry
+** The Founders of Non Euclidean Geometry: Gauss
 
 #+BEGIN_quote
 The assumption that (in a triangle) the sum of the three angles is less than $180^{\circ}$ leads to a curious geometry, quite different from ours, but thoroughly consistent, which I have developed to my entire satisfaction.
@@ -361,7 +361,7 @@ The assumption that (in a triangle) the sum of the three angles is less than $18
 
 -- Gauss
 
-\pause
+** The Founders of Non Euclidean Geometry: Riemann
 
 #+BEGIN_quote
 Riemann has shewn that as there are different kinds of lines and surfaces, so there are different kinds of space of three dimensions; and that we can only find out by experience to which of these kinds the space in which we live belongs. In particular, the axioms of plane geometry are true within the limits of experiment on the surface of a sheet of paper, and yet we know that the sheet is really covered with a number of small ridges and furrows, upon which (the total curvature not being zero) these axioms are not true. Similarly, he says although the axioms of solid geometry are true within the limits of experiment for finite portions of our space, yet we have no reason to conclude that they are true for very small portions; and if any help can be got thereby for the explanation of physical phenomena, we may have reason to conclude that they are not true for very small portions of space.
