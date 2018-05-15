@@ -15,7 +15,7 @@
 #+LaTeX_HEADER: \input{local_definitions}
 
 * Euclidean Geometry
-** Euclid's Elements
+** Euclid's Elements in Antiquity
 **** Image
      :PROPERTIES:
      :BEAMER_col: 0.5
@@ -32,13 +32,15 @@
 
 - Alexandria, Egypt Circa 300bc
 - 13 books on plane and solid Euclidean geometry, elementary number theory, and incommensurable lines (\(\sqrt{2}\) is irrational!)
+- Introduced the axiomatic method
 
-** Euclid's Elements
+** Influence of Euclid's Elements
 **** Image
      :PROPERTIES:
      :BEAMER_col: 0.5
      :END:
 
+#+ATTR_LATEX: height: 0.8\textheight
 [[file:img/euclid_billingsley.jpg]]
 
 \tiny Image by Charles Thomas-Stanford - Early editions of Euclid’s Elements, by Charles Thomas-Stanford. Plate X., Public Domain, https://commons.wikimedia.org/w/index.php?curid=144950
@@ -48,7 +50,11 @@
      :BEAMER_col: 0.5
      :END:
 
-- Standard text until the 20th Century
+- Standard text for over 200 years until the 20th Century
+- Spurred the development of logic
+- Rigorous proofs!
+- Foundations for physics: Copernicus, Kepler, Galileo, Newton \pause
+- *The Fifth Postulate*! Development of non-Euclidean geometry...
 
 ** On Euclid's Elements
 
@@ -78,7 +84,7 @@ At the age of 12 I experienced a second wonder of a very different kind: a bookl
  2. To produce [extend] a finite straight line continuously in a straight line. \pause
  3. To describe a circle with any centre and distance [radius]. \pause
  4. That all right angles are equal to one another. \pause
- 5. The parallel postulate: That, if a straight line falling on two straight lines make the interior angles on the same side less than two right angles, the two straight lines, if produced indefinitely, meet on that side on which are the angles less than the two right angles.
+ 5. *The parallel postulate*: That, if a straight line falling on two straight lines make the interior angles on the same side less than two right angles, the two straight lines, if produced indefinitely, meet on that side on which are the angles less than the two right angles.
 
 ** The First Four Axioms
 ** A Model for Euclidean Geometry - Descarte
