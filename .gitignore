@@ -1,0 +1,15 @@
+*~
+*.blg
+*.bbl
+*-blx.bib
+*.run.xml
+*.aux
+*.log
+*.fls
+*.dep
+*.fdb_latexmk
+*.out
+*.toc
+auto/
+talk.tex
+talk.pdf
