@@ -215,7 +215,117 @@ Given any line $L$ and point $p$ not on $L$, there *exists* a *unique* line pass
   - 1 axiom of parallels: For any line $L$ and point $p$ not on the line, there is a unique parallel line $Q$ in the plane determined by $L$ and $a$
   - 2 axioms of continuity: e.g. For a line $L = pq$, and a point $r$ on the line segment, there exists a natural number $n$ such that joining $pr$ contiguously $n$ times extends beyond $q$
 
-** A Model for Euclidean Geometry - Descarte
+** A Model for Euclidean Geometry - Descartes
+
+The *plane*, \(P\) is the set of ordered pairs of real numbers: \(\{(x, y) : x, y \in \RR\}\). \pause
+
+- *Points*: any such pair, eg. \((1, 0)\), \((100, -10^9)\), \((\pi, 1)\) etc. \pause
+- *Lines*: sets of the form \(\{p + t q : t \in I \text{ an interval}\}\) with \(p,q\) points \pause
+- *Circles*: sets of the form \(\{(x, y) : (x-x_0)^2 + (y-y_0)^2 = R^2, x_0, y_0 \in \RR, R > 0\}\) \pause
+- *Right Angles*: \(p + tq, p + tr\) form a right angle at \(p\) if \(q \cdot r = 0\) where \(q \cdot r = q_1 r_1 + q_2 r_2\) and \(q = (q_1, q_2), r = (r_1, r_2)\).
+
+** Descartes' Model Satisfies the Axioms
+
+- Axiom 1: Given points, \(p, q\), our line is precisely \(\{p + t(q-p) : 0 \leq t \leq 1\}\). \pause
+- Axiom 2: Given a line \(\{p + tq : a \leq t \leq b\}\), extend it by \(\{p + t q: a \leq t \leq b + 1\}\). \pause
+- Axiom 3: Given a point \(p = (p_1, p_2)\), and \(R > 0\), just take \(\{(x, y) : (x-p_1)^2 + (y-p_2)^2 = R^2\}\) \pause
+- Axiom 4: Given two right angles formed by \(\{p_1 + tq_1, p_1 + tr_1\}\) and \(\{p_2 + tq_2, p_2 + t_r2\}\) first translate:
+  \[
+  \tau: p \in P \mapsto p + p_1 - p_2 \Rightarrow \tau(p_2) = p_1
+  \]
+  then rotate so that
+  \[
+  r_2 \mapsto r_1.
+  \]
+
+** Descartes' Model Satisfies The Fifth Postulate
+
+Take a line
+\[
+L = \{p + t q\}
+\]
+and a point
+\[
+r \notin L \text{ so that } r \ne p + t q \text{ for any } t
+\]
+\pause
+
+For our parallel line, let
+\[
+L' = \{r + t q\}.
+\]
+
+\begin{figure}
+\includegraphics[height=0.4\textheight]{img/euclid_axiom5_descartes.png}
+\end{figure}
+
+** Descartes' Model Satisfies The Fifth Postulate
+
+*Proof that \(L\) and \(L'\) are parallel*: Suppose \(L\) intersects \(L'\). Then there is a \(t_1\) and a \(t_2\) such that
+\[
+p + t_1 q = r + t_2 q.
+\]
+\pause
+
+But then
+\[
+r = p + (t_1 - t_2) q \in L
+\]
+a contradiction.
+
+** Descartes' Model Satisfies The Fifth Postulate
+
+*Proof that \(L'\) is unique*
+
+Let \(\bar{L} = r + t w\) be a line through \(r\) and not intersecting \(L'\). /Why can we assume it's of this form and not say \(u + t w\) with \(u \ne r\)?/ \pause
+
+Let \(q^{\perp}\) satisfy \(q^{\perp} \cdot q = 0\) (by the fourth axiom \(q^{\perp}\) is unique up to scaling and reflection.) We may write uniquely,
+\[
+w = A q + B q^{\perp} \text{ for } A, B \in \RR.
+\]
+\pause
+Then
+\[
+\bar{L} = \{r + t A q + t B q^{\perp}\}.
+\]
+\pause
+
+To show \(\bar{L} = L'\) we show that \(B = 0\) since then
+\[
+L' = \{r + t q : t \in \RR\} = \{r + s A q : s \in \RR\} = \bar{L} \quad \text{ taking } t = A s.
+\]
+
+** Descartes' Model Satisfies The Fifth Postulate
+
+To show \(B = 0\) we show that \(B \ne 0\) implies \(\bar{L}\) intersects \(L\). That is, there exists \(t_1, t_2\) such that
+\[
+p + t_1 q = r + t_2 w = r + t_2 A q + t_2 B q^{\perp}.
+\]
+\pause
+
+In other words,
+\[
+r = p + (t_1 - A t_2) q - B t_2 q^{\perp}.
+\]
+\pause
+
+Finally, then since \(r \notin L\), we have
+\[
+r = p + C q + D q^{\perp}, \quad D \ne 0.
+\]
+\pause
+
+Then let
+\[
+t_1 = C - AD/B, \quad t_2 = -D/B.
+\]
+
+** Descartes' Model Satisfies The Fifth Postulate
+
+\begin{figure}
+\includegraphics[height=0.8\textheight]{img/euclid_axiom5_descartes_proof.png}
+\end{figure}
+
 * Spherical and Projective Geometry
 ** Projective Geometry
 ** Spherical Geometry
