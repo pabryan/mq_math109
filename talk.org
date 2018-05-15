@@ -30,8 +30,8 @@
      :END:
 
 - Alexandria, Egypt Circa 300bc
-- 13 books on plane and solid Euclidean geometry, elementary number theory, and incommensurable lines (\(\sqrt{2}\) is irrational!)
-- Introduced the axiomatic method
+- 13 books on plane (2d) and solid (3d) Euclidean geometry, elementary number theory (infinitely many primes!), and incommensurable lines (\(\sqrt{2}\) is irrational!)
+- Influential use of the axiomatic method
 
 ** Influence of Euclid's Elements
 **** Image
@@ -49,7 +49,7 @@
      :BEAMER_col: 0.5
      :END:
 
-- Standard text for over 200 years until the 20th Century
+- Standard text for over 2000 years until the 20th Century
 - Spurred the development of logic
 - Rigorous proofs!
 - Foundations for physics: Copernicus, Kepler, Galileo, Newton \pause
@@ -198,7 +198,7 @@ Given any line $L$ and point $p$ not on $L$, there *exists* a *unique* line pass
 - The axioms are supposed to determine everything through *logical deduction only*. Therefore we must be careful not to let our intuition of what geometric concepts are *supposed to mean* get in the way of rigorous deduction. \pause
 - One must be able to say at all times--instead of points, straight lines, and planes--tables, chairs, and beer mugs -- David Hilbert
 
-** Hilbert's Axioms
+** Hilbert's Axioms for Solid Geometry
 
 - Three /primitive/ notions:
   1. point
@@ -208,12 +208,12 @@ Given any line $L$ and point $p$ not on $L$, there *exists* a *unique* line pass
   1. Betweeness of points
   2. Containment of points on lines, points on planes and lines on planes
   3. Congruence of lines, angles \pause
-- Twenty axioms
-  - 8 axioms of incidence: e.g any two points lie on a line
-  - 4 axioms of order: e.g. if a point lies between two other points, then all three points lie on a line
-  - 6 axioms of congruence: e.g. triangles with two congruent sides and a congruent angle are congruent
-  - 1 axiom of parallels: For any line $L$ and point $p$ not on the line, there is a unique parallel line $Q$ in the plane determined by $L$ and $a$
-  - 2 axioms of continuity: e.g. For a line $L = pq$, and a point $r$ on the line segment, there exists a natural number $n$ such that joining $pr$ contiguously $n$ times extends beyond $q$
+- 21 axioms (18 axioms for plane geometry) - 1 axiom is redundant
+  - 8 (3) axioms of incidence: e.g any two points lie on a line
+  - 4 (4) axioms of order: e.g. if a point lies between two other points, then all three points lie on a line
+  - 6 (6) axioms of congruence: e.g. triangles with two congruent sides and a congruent angle are congruent
+  - 1 (1) axiom of parallels: For any line $L$ and point $p$ not on the line, there is a unique parallel line $Q$ in the plane determined by $L$ and $a$
+  - 2 (2) axioms of continuity: e.g. For a line $L = pq$, and a point $r$ on the line segment, there exists a natural number $n$ such that joining $pr$ contiguously $n$ times extends beyond $q$
 
 ** A Model for Euclidean Geometry - Descartes
 
