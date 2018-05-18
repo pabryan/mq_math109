@@ -502,6 +502,14 @@ The sphere $\sphere$ is the set of triples,
 [[file:img/sphere_axiom4.png]]
 #+CAPTION: Right Angles
 
+** Spherical Geometry and Euclid's Axioms
+
+1. Straight lines between points @@latex:{\color{green} exist}@@, but are @@latex:{\color{red} not always unique}@@ - antipodal points! \pause
+2. A straight line @@latex:{\color{red} cannot}@@ be extended past length of \(2\pi\) \pause
+3. Circles @@latex:{\color{red} don't exist}@@ for radius \(> \pi\) \pause
+4. All right angles @@latex:{\color{green} are}@@ equal to one another. \pause
+5. Parallel lines @@latex:{\color{red} don't exist}@@. All lines intersect.
+
 ** Hyperbolic Geometry (Bolyai, Lobachevsky, Gauss)
 
 The hyperbolic plane $\HH$ is the set of triples,
