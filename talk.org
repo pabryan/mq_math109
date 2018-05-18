@@ -462,6 +462,46 @@ The sphere $\sphere$ is the set of triples,
 - *Circles*: Intersections of arbitrary planes with the sphere. \pause
 - *Right Angles*: Formed by lines with perpendicular tangents, or equivalently by intersections of perpendicular planes
 
+** Spherical Geometry
+
+**** Cell 1,1
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+#+ATTR_LATEX: :height 0.3\textheight :caption {\tiny Points}
+[[file:img/sphere_axiom1.png]]
+
+**** Cell 1,2
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+#+ATTR_LATEX: :height 0.3\textheight :caption {\tiny Lines}
+[[file:img/sphere_axiom2.png]]
+
+**** 
+     :PROPERTIES:
+     :BEAMER_env: ignoreheading
+     :END:
+
+**** Cell 2,1
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+#+ATTR_LATEX: :height 0.3\textheight :caption {\tiny Circles}
+[[file:img/sphere_axiom3.png]]
+
+**** Cell 2,2
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+#+ATTR_LATEX: :height 0.3\textheight :caption {\tiny Right Angles}
+[[file:img/sphere_axiom4.png]]
+#+CAPTION: Right Angles
+
 ** Hyperbolic Geometry (Bolyai, Lobachevsky, Gauss)
 
 The hyperbolic plane $\HH$ is the set of triples,
