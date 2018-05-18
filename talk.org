@@ -524,6 +524,14 @@ The hyperbolic plane $\HH$ is the set of triples,
 - *Circles*: Intersections of planes /not/ passing through the origin with \(\HH\). \pause
 - *Right Angles*: Formed by lines with perpendicular tangents
 
+** Hyperbolic Geometry and Euclid's Axioms
+
+1. Straight lines between points @@latex:{\color{green} exist}@@, and are @@latex:{\color{green}unique}@@ \pause
+2. Every straight line @@latex:{\color{green} can}@@ be extended indefinitely \pause
+3. Circles of any centre and any radius @@latex:{\color{green}exist}@@ and are @@latex:{\color{green}unique}@@ \pause
+4. All right angles @@latex:{\color{green} are}@@ equal to one another. \pause
+5. Parallel lines @@latex:{\color{green}exist}@@ but are @@latex:{\color{red} not unique}@@.
+
 * Differential Geometry
 ** Length and Angle
 ** Calculus on the Sphere
