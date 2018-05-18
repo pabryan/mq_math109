@@ -39,7 +39,7 @@
      :BEAMER_col: 0.5
      :END:
 
-#+ATTR_LATEX: height: 0.8\textheight
+#+ATTR_LATEX: :height 0.7\textheight
 [[file:img/euclid_billingsley.jpg]]
 
 \tiny Image by Charles Thomas-Stanford - Early editions of Euclid’s Elements, by Charles Thomas-Stanford. Plate X., Public Domain, https://commons.wikimedia.org/w/index.php?curid=144950
@@ -196,7 +196,26 @@ Given any line $L$ and point $p$ not on $L$, there *exists* a *unique* line pass
 
 - Many notions like extending lines, congruence, a point lying on a line etc. are not defined. \pause
 - The axioms are supposed to determine everything through *logical deduction only*. Therefore we must be careful not to let our intuition of what geometric concepts are *supposed to mean* get in the way of rigorous deduction. \pause
-- One must be able to say at all times--instead of points, straight lines, and planes--tables, chairs, and beer mugs -- David Hilbert
+**** Image
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+#+ATTR_LATEX: :height 0.3\textheight
+[[file:img/hilbert.jpg]]
+
+\tiny By Unknown - Possibly Reid, Constance (1970) Hilbert, Berlin, Heidelberg: Springer Berlin Heidelberg Imprint Springer, p. 230 ISBN: 978-3-662-27132-2., Public Domain, https://commons.wikimedia.org/w/index.php?curid=36302
+
+**** Text
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+#+BEGIN_quote
+One must be able to say at all times--instead of points, straight lines, and planes--tables, chairs, and beer mugs
+#+END_quote
+
+-- David Hilbert
 
 ** Hilbert's Axioms for Solid Geometry
 
@@ -208,7 +227,7 @@ Given any line $L$ and point $p$ not on $L$, there *exists* a *unique* line pass
   1. Betweeness of points
   2. Containment of points on lines, points on planes and lines on planes
   3. Congruence of lines, angles \pause
-- 21 axioms (18 axioms for plane geometry) - 1 axiom is redundant
+- 21 axioms (16 axioms for plane geometry) - 1 axiom is redundant
   - 8 (3) axioms of incidence: e.g any two points lie on a line
   - 4 (4) axioms of order: e.g. if a point lies between two other points, then all three points lie on a line
   - 6 (6) axioms of congruence: e.g. triangles with two congruent sides and a congruent angle are congruent
@@ -286,14 +305,20 @@ w = A q + B q^{\perp} \text{ for } A, B \in \RR.
 \pause
 Then
 \[
-\bar{L} = \{r + t A q + t B q^{\perp}\}.
+\bar{L} = \{r + t (A q + B q^{\perp})\}.
 \]
 \pause
 
 To show \(\bar{L} = L'\) we show that \(B = 0\) since then
 \[
-L' = \{r + t q : t \in \RR\} = \{r + s A q : s \in \RR\} = \bar{L} \quad \text{ taking } t = A s.
+L' = \{r + t q : t \in \RR\} = \{r + s A q : s \in \RR\} = \bar{L} \quad \text{ by taking } t = A s.
 \]
+
+** Descartes' Model Satisfies The Fifth Postulate
+
+\begin{figure}
+\includegraphics[height=0.8\textheight]{img/euclid_axiom5_descartes_proof.png}
+\end{figure}
 
 ** Descartes' Model Satisfies The Fifth Postulate
 
@@ -320,12 +345,6 @@ Then let
 t_1 = C - AD/B, \quad t_2 = -D/B.
 \]
 
-** Descartes' Model Satisfies The Fifth Postulate
-
-\begin{figure}
-\includegraphics[height=0.8\textheight]{img/euclid_axiom5_descartes_proof.png}
-\end{figure}
-
 * Non Euclidean Geometry
 ** Attempts to Prove the Fifth Postulate
 - Ptomely (Proclus showed Ptolemy implicitly used Playfair's postulate)
@@ -335,9 +354,9 @@ t_1 = C - AD/B, \quad t_2 = -D/B.
 - Saccheri
   - Showed that if lines can be extended infinitely, then parallels exist
   - Derived seemingly counter-intuitive statements from the assumption that parallels are not unique but could not show any contradiction \pause
-- Legendre (same assumption as al-Gauhary) \pause
+- Legendre (same assumption as al-Gauhary)
 
-** The Founders of Non Euclidean Geometry : Lobachevsky
+** The Founders of Non Euclidean Geometry: Lobachevsky
 
 #+BEGIN_quote
 The boldness of his challenge and its successful outcome have inspired mathematicians and scientists in general to challenge other 'axioms' or accepted 'truths', for example the 'law' of causality which, for centuries, have seemed as necessary to straight thinking as Euclid's postulate appeared until Lobachevsky discarded it. The full impact of the Lobachevskian method of challenging axioms has probably yet to be felt. It is no exaggeration to call Lobachevsky the Copernicus of Geometry, for geometry is only a part of the vaster domain which he renovated; it might even be just to designate him as a Copernicus of all thought.
@@ -345,13 +364,43 @@ The boldness of his challenge and its successful outcome have inspired mathemati
 
 -- E. T. Bell
 
-** The Founders of Non Euclidean Geometry : Bolyai
+**** Image
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+#+ATTR_LATEX: :height 0.25\textheight
+[[file:img/lobachevsky.jpg]]
+
+**** Text
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+\tiny By http://www.tatar.museum.ru/univer/col-lob.htm, Public Domain, https://commons.wikimedia.org/w/index.php?curid=16175384
+
+** The Founders of Non Euclidean Geometry: Bolyai
 
 #+BEGIN_quote
 You must not attempt this approach to parallels. I know this way to the very end. I have traversed this bottomless night, which extinguished all light and joy in my life. I entreat you, leave the science of parallels alone...Learn from my example."
 #+END_quote
 
 -- Farkas Bolyai to his son János Bolyai
+
+**** Image
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+#+ATTR_LATEX: :height 0.25\textheight
+[[file:img/bolyai.jpg]]
+
+**** Text
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+\tiny By Transferred from hu.wikipedia to Commons by Tambo., CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=24338736
 
 ** The Founders of Non Euclidean Geometry: Gauss
 
@@ -361,13 +410,43 @@ The assumption that (in a triangle) the sum of the three angles is less than $18
 
 -- Gauss
 
+**** Image
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+#+ATTR_LATEX: :height 0.25\textheight
+[[file:img/gauss.jpg]]
+
+**** Text
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+\tiny http://archiv.bbaw.de/archiv/archivbestaende/abteilung-sammlungen/gesamtbestand-des-kunstbesitzes/gelehrtengemaelde/gelehrtengemalde-seiten/ZIMM-0001.html, Public Domain, https://commons.wikimedia.org/w/index.php?curid=6886354
+
 ** The Founders of Non Euclidean Geometry: Riemann
 
 #+BEGIN_quote
-Riemann has shewn that as there are different kinds of lines and surfaces, so there are different kinds of space of three dimensions; and that we can only find out by experience to which of these kinds the space in which we live belongs. In particular, the axioms of plane geometry are true within the limits of experiment on the surface of a sheet of paper, and yet we know that the sheet is really covered with a number of small ridges and furrows, upon which (the total curvature not being zero) these axioms are not true. Similarly, he says although the axioms of solid geometry are true within the limits of experiment for finite portions of our space, yet we have no reason to conclude that they are true for very small portions; and if any help can be got thereby for the explanation of physical phenomena, we may have reason to conclude that they are not true for very small portions of space.
+Riemann has shewn that as there are different kinds of lines and surfaces, so there are different kinds of space of three dimensions; and that we can only find out by experience to which of these kinds the space in which we live belongs. In particular, the axioms of plane geometry are true within the limits of experiment on the surface of a sheet of paper, and yet we know that the sheet is really covered with a number of small ridges and furrows, upon which (the total curvature not being zero) these axioms are not true.
 #+END_quote
 
 -- Clifford
+
+**** Image
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+#+ATTR_LATEX: :height 0.25\textheight
+[[file:img/riemann.jpg]]
+
+**** Text
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+\tiny By http://www.sil.si.edu/digitalcollections/hst/scientific-identity/explore.htm according to the German Wikipedia., Public Domain, https://commons.wikimedia.org/w/index.php?curid=27383
 
 ** Spherical Geometry
 
@@ -383,7 +462,7 @@ The sphere $\sphere$ is the set of triples,
 - *Circles*: Intersections of arbitrary planes with the sphere. \pause
 - *Right Angles*: Formed by lines with perpendicular tangents, or equivalently by a great circle and the great circle obtained by a \(\pi/2\)-rotation
 
-** Hyperbolic Geometry
+** Hyperbolic Geometry (Bolyai, Lobachevsky, Gauss)
 
 The hyperbolic plane $\HH$ is the set of triples,
 \[
