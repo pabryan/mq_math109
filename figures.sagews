@@ -76,6 +76,51 @@ p = L1 + L2 + L3
 p.show(axes=False, aspect_ratio=1)
 p.save('img/euclid_axiom5_descartes_proof.png', axes=False, aspect_ratio=1)
 ︡9063a3d2-b259-4edf-ad93-e61ad8c36c92︡{"file":{"filename":"/home/user/.sage/temp/project-746c2d02-fba9-41f7-86c8-dbce79185bad/8967/tmp_ZXkFT7.svg","show":true,"text":null,"uuid":"e4469d6f-6674-45fc-b8b8-b18232627aa8"},"once":false}︡{"file":{"filename":"/home/user/.sage/temp/project-746c2d02-fba9-41f7-86c8-dbce79185bad/8967/tmp_N0TD0X.svg","show":true,"text":null,"uuid":"cd5ddc5f-daed-4f6f-86de-26c2066decab"},"once":false}︡{"done":true}︡
+︠7920b99c-bd16-4dad-8647-eb6cb631a2f4s︠
+# Plot the sphere with points, lines, circles and right-angles illustrated
+from sage.plot.plot3d.transform import rotate_arbitrary
+t = var('t')
+S = sphere(mesh=True, opacity=0.8)
+
+x1 = point((0, 0, 1), size=10, color="red")
+x2 = point((1, 0, 0), size=10, color="red")
+x3 = point((1/sqrt(3), -1/sqrt(3), 1/sqrt(3)), size=10, color="red")
+
+
+L1 = vector([cos(t), sin(t), 0])
+M12 = rotate_arbitrary((1,1,1), pi/2)
+L2 = M12 * L1
+M13 = rotate_arbitrary((1, 0, 0), pi/2)
+L3 = M13 * L1
+
+r = 1/2
+N12 = rotate_arbitrary((1,1,1), -pi/2)
+C1 = vector([r*cos(t), r*sin(t), sqrt(1-r^2)])
+C2 = N12 * C1
+
+pL1 = parametric_plot3d(L1, (t, 0, 2*pi), color="red", thickness=5)
+pL2 = parametric_plot3d(L2, (t, 0, 2*pi), color="red", thickness=5)
+pL3 = parametric_plot3d(L3, (t, 0, 2*pi), color="red", thickness=5)
+
+pC1 = parametric_plot3d(C1, (t, 0, 2*pi), color="red", thickness=5)
+pC2 = parametric_plot3d(C2, (t, 0, 2*pi), color="red", thickness=5)
+
+p1 = x1 + x2 + x3 + S
+p2 = S + pL1 + pL2
+p3 = S + pC1 + pC2
+p4 = S + pL1 + pL3
+
+p1.show(frame=False, aspect_ratio=1)
+p2.show(frame=False, aspect_ratio=1)
+p3.show(frame=False, aspect_ratio=1)
+p4.show(frame=False, aspect_ratio=1)
+
+p1.save("img/sphere_axiom1.png", frame=False, aspect_ratio=1)
+p2.save("img/sphere_axiom2.png", frame=False, aspect_ratio=1)
+p3.save("img/sphere_axiom3.png", frame=False, aspect_ratio=1)
+p4.save("img/sphere_axiom4.png", frame=False, aspect_ratio=1)
+
+︡8b6d2601-0488-4ab1-85cf-cace49fbc693︡{"file":{"filename":"57680980-50bc-4b1c-b259-b9deeee6b461.sage3d","uuid":"57680980-50bc-4b1c-b259-b9deeee6b461"}}︡{"file":{"filename":"dba67dc3-eb13-4ede-acdc-f0dd6b8e2b64.sage3d","uuid":"dba67dc3-eb13-4ede-acdc-f0dd6b8e2b64"}}︡{"file":{"filename":"6156602f-28d5-4976-9957-e706ea4ac742.sage3d","uuid":"6156602f-28d5-4976-9957-e706ea4ac742"}}︡{"file":{"filename":"02d2ccb6-96db-4030-8c76-fbc3e9914686.sage3d","uuid":"02d2ccb6-96db-4030-8c76-fbc3e9914686"}}︡{"done":true}︡
 
 
 
