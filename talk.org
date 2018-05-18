@@ -460,7 +460,7 @@ The sphere $\sphere$ is the set of triples,
 - *Points*: Any such triple. E.g. \((1, 0, 0)\), \((\tfrac{1}{2}, \frac{1}{2}, \frac{1}{\sqrt{2}})\). \pause
 - *Lines*: Great circles: rotations of the equator or equivalently intersections of planes through the origin with the sphere. \pause
 - *Circles*: Intersections of arbitrary planes with the sphere. \pause
-- *Right Angles*: Formed by lines with perpendicular tangents, or equivalently by a great circle and the great circle obtained by a \(\pi/2\)-rotation
+- *Right Angles*: Formed by lines with perpendicular tangents, or equivalently by intersections of perpendicular planes
 
 ** Hyperbolic Geometry (Bolyai, Lobachevsky, Gauss)
 
