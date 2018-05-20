@@ -532,7 +532,3 @@ The hyperbolic plane $\HH$ is the set of triples,
 4. All right angles @@latex:{\color{green} are}@@ equal to one another. \pause
 5. Parallel lines @@latex:{\color{green}exist}@@ but are @@latex:{\color{red} not unique}@@.
 
-* Differential Geometry
-** Length and Angle
-** Calculus on the Sphere
-** Geodesics - aka straight lines
