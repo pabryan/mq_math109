@@ -121,6 +121,71 @@ p3.save("img/sphere_axiom3.png", frame=False, aspect_ratio=1)
 p4.save("img/sphere_axiom4.png", frame=False, aspect_ratio=1)
 
 ︡8b6d2601-0488-4ab1-85cf-cace49fbc693︡{"file":{"filename":"57680980-50bc-4b1c-b259-b9deeee6b461.sage3d","uuid":"57680980-50bc-4b1c-b259-b9deeee6b461"}}︡{"file":{"filename":"dba67dc3-eb13-4ede-acdc-f0dd6b8e2b64.sage3d","uuid":"dba67dc3-eb13-4ede-acdc-f0dd6b8e2b64"}}︡{"file":{"filename":"6156602f-28d5-4976-9957-e706ea4ac742.sage3d","uuid":"6156602f-28d5-4976-9957-e706ea4ac742"}}︡{"file":{"filename":"02d2ccb6-96db-4030-8c76-fbc3e9914686.sage3d","uuid":"02d2ccb6-96db-4030-8c76-fbc3e9914686"}}︡{"done":true}︡
+︠a96df27b-56c9-4224-9421-e3d4ee350214s︠
+# Plot the hyperboloid with points, lines, circles and right-angles illustrated
+from sage.plot.plot3d.transform import rotate_arbitrary
+t = var('t')
+x, y, z = var('x,y,z')
+f(x, y, z) = x^2 + y^2 - z^2 + 1
+H = p = implicit_plot3d(f,(x,-4,4),(y,-4,4),(z,1,4), mesh=True, opacity=0.8)
+
+x1 = point((0, 0, 1), size=10, color="red")
+x2 = point((1, 0, sqrt(2)), size=10, color="red")
+x3 = point((1/sqrt(3), -1/sqrt(3), sqrt(5/3)), size=10, color="red")
+
+def lorentz_boost(V):
+    v = V.norm()
+    gamma = 1/(sqrt(1 - v^2))
+    M = matrix(RR, 3)
+    M[2, 2] = gamma
+    M[2,0:2] = -gamma*V
+    M[0:2,2] = -gamma*V
+
+    M[0:2, 0:2] = ((gamma-1)/v^2) * V.tensor_product(V) + matrix.identity(2)
+
+    return M
+
+V = vector([1/2, 1/2])
+M12 = lorentz_boost(V)
+M13 = rotate_arbitrary((0,0,1), pi/2)
+L1 = vector([sinh(t), 0, cosh(t)])
+L2 = M12 * L1
+L3 = M13 * L1
+L4 = M12 * L3
+
+r = 1
+C1 = vector([r*cos(t), r*sin(t), sqrt(1+r^2)])
+C2 = M12 * C1
+
+tmin=-2
+tmax=2
+pL1 = parametric_plot3d(L1, (t, tmin, tmax), color="red", thickness=5)
+pL2 = parametric_plot3d(L2, (t, tmin+3/4, tmax+1/4), color="red", thickness=5)
+pL3 = parametric_plot3d(L3, (t, tmin, tmax), color="red", thickness=5)
+pL4 = parametric_plot3d(L2, (t, tmin+3/4, tmax+1/4), color="green", thickness=5)
+pL5 = parametric_plot3d(L4, (t, tmin-1/4, tmax-1), color="green", thickness=5)
+
+
+pC1 = parametric_plot3d(C1, (t, 0, 2*pi), color="red", thickness=5)
+pC2 = parametric_plot3d(C2, (t, 0, 2*pi), color="red", thickness=5)
+
+p1 = H + x1 + x2 + x3
+p2 = H + pL1 + pL2
+p3 = H + pC1 + pC2
+p4 = H + pL1 + pL3 + pL4 + pL5
+
+p1.show(frame=False, aspect_ratio=1)
+p2.show(frame=False, aspect_ratio=1)
+p3.show(frame=False, aspect_ratio=1)
+p4.show(frame=False, aspect_ratio=1)
+
+p1.save("img/hyperbolic_axiom1.png", frame=False, aspect_ratio=1)
+p2.save("img/hyperbolic_axiom2.png", frame=False, aspect_ratio=1)
+p3.save("img/hyperbolic_axiom3.png", frame=False, aspect_ratio=1)
+p4.save("img/hyperbolic_axiom4.png", frame=False, aspect_ratio=1)
+︡fa5db78f-b794-43a2-ba76-391c428a2491︡{"file":{"filename":"9b8500aa-75fe-4017-b9da-4b0260d85275.sage3d","uuid":"9b8500aa-75fe-4017-b9da-4b0260d85275"}}︡{"file":{"filename":"8cdc3466-209a-4408-8fc1-bed4c01da736.sage3d","uuid":"8cdc3466-209a-4408-8fc1-bed4c01da736"}}︡{"file":{"filename":"2aa3d1e0-50d5-4d93-b3f3-8e9c418b4e5e.sage3d","uuid":"2aa3d1e0-50d5-4d93-b3f3-8e9c418b4e5e"}}︡{"file":{"filename":"3acea111-28d1-405d-80e1-9ac87fafebc9.sage3d","uuid":"3acea111-28d1-405d-80e1-9ac87fafebc9"}}︡{"done":true}︡
+︠5c28ec33-82f6-4353-a191-26d317d0a698︠
+
 
 
 
