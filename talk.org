@@ -347,6 +347,7 @@ t_1 = C - AD/B, \quad t_2 = -D/B.
 
 * Non Euclidean Geometry
 ** Attempts to Prove the Fifth Postulate
+
 - Ptomely (Proclus showed Ptolemy implicitly used Playfair's postulate)
 - Proclus \pause
 - al-Gauhary (another implicit assumption) \pause
@@ -523,6 +524,46 @@ The hyperbolic plane $\HH$ is the set of triples,
 - *Lines*: Intersections of planes through the origin with \(\HH\). \pause
 - *Circles*: Intersections of planes /not/ passing through the origin with \(\HH\). \pause
 - *Right Angles*: Formed by lines with perpendicular tangents
+
+** Hyperbolic Geometry
+
+**** Cell 1,1
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+#+ATTR_LATEX: :height 0.3\textheight :caption {\tiny Points}
+[[file:img/hyperbolic_axiom1.png]]
+
+**** Cell 1,2
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+#+ATTR_LATEX: :height 0.3\textheight :caption {\tiny Lines}
+[[file:img/hyperbolic_axiom2.png]]
+
+**** 
+     :PROPERTIES:
+     :BEAMER_env: ignoreheading
+     :END:
+
+**** Cell 2,1
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+#+ATTR_LATEX: :height 0.3\textheight :caption {\tiny Circles}
+[[file:img/hyperbolic_axiom3.png]]
+
+**** Cell 2,2
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+#+ATTR_LATEX: :height 0.3\textheight :caption {\tiny Right Angles}
+[[file:img/hyperbolic_axiom4.png]]
+#+CAPTION: Right Angles
 
 ** Hyperbolic Geometry and Euclid's Axioms
 
