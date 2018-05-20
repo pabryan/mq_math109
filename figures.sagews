@@ -169,23 +169,40 @@ pL5 = parametric_plot3d(L4, (t, tmin-1/4, tmax-1), color="green", thickness=5)
 pC1 = parametric_plot3d(C1, (t, 0, 2*pi), color="red", thickness=5)
 pC2 = parametric_plot3d(C2, (t, 0, 2*pi), color="red", thickness=5)
 
+M16 = rotate_arbitrary((0, 0, 1), 0.2)
+L6 = M12 * M16 * L1
+pL6 = parametric_plot3d(L6, (t, tmin+3/4, tmax+1/4), color="yellow", thickness=5)
+
+f1 = y
+P1 = implicit_plot3d(f1, (x, -2, 2), (y, -2, 2), (z,-1,3), color="gray")
+q1 = M12*(L1.substitute(t=0))
+N1 = M12 * vector([0, 1, 0])
+f2 = N1[0] * x + N1[1] * y - N1[2]*z
+P2 = implicit_plot3d(f2, (x, -2, 2), (y, -2, 2), (z,-1,3), color="gray")
+
 p1 = H + x1 + x2 + x3
 p2 = H + pL1 + pL2
 p3 = H + pC1 + pC2
 p4 = H + pL1 + pL3 + pL4 + pL5
+p5 = H + pL1 + pL4 + pL6 + point(q1, size=10, color="black")
+p6 = H + pL1 + pL2 + P1 + P2
 
 p1.show(frame=False, aspect_ratio=1)
 p2.show(frame=False, aspect_ratio=1)
 p3.show(frame=False, aspect_ratio=1)
 p4.show(frame=False, aspect_ratio=1)
+p5.show(frame=False, aspect_ratio=1)
+p6.show(frame=False, aspect_ratio=1)
 
 p1.save("img/hyperbolic_axiom1.png", frame=False, aspect_ratio=1)
 p2.save("img/hyperbolic_axiom2.png", frame=False, aspect_ratio=1)
 p3.save("img/hyperbolic_axiom3.png", frame=False, aspect_ratio=1)
 p4.save("img/hyperbolic_axiom4.png", frame=False, aspect_ratio=1)
-︡fa5db78f-b794-43a2-ba76-391c428a2491︡{"file":{"filename":"9b8500aa-75fe-4017-b9da-4b0260d85275.sage3d","uuid":"9b8500aa-75fe-4017-b9da-4b0260d85275"}}︡{"file":{"filename":"8cdc3466-209a-4408-8fc1-bed4c01da736.sage3d","uuid":"8cdc3466-209a-4408-8fc1-bed4c01da736"}}︡{"file":{"filename":"2aa3d1e0-50d5-4d93-b3f3-8e9c418b4e5e.sage3d","uuid":"2aa3d1e0-50d5-4d93-b3f3-8e9c418b4e5e"}}︡{"file":{"filename":"3acea111-28d1-405d-80e1-9ac87fafebc9.sage3d","uuid":"3acea111-28d1-405d-80e1-9ac87fafebc9"}}︡{"done":true}︡
-︠5c28ec33-82f6-4353-a191-26d317d0a698︠
+p5.save("img/hyperbolic_axiom5.png", frame=False, aspect_ratio=1)
+p6.save("img/hyperbolic_lines_planes.png", frame=False, aspect_ratio=1)
 
+︡42ed7719-d3a0-43e6-a300-ebb58fbe02e3︡{"file":{"filename":"cf065805-7e6a-4244-8966-80ea6811fe04.sage3d","uuid":"cf065805-7e6a-4244-8966-80ea6811fe04"}}︡{"file":{"filename":"ac967f9b-3a31-459d-836b-c32b4a8b0404.sage3d","uuid":"ac967f9b-3a31-459d-836b-c32b4a8b0404"}}︡{"file":{"filename":"53bcb445-f5bc-48f5-b1b4-7d07950a56c8.sage3d","uuid":"53bcb445-f5bc-48f5-b1b4-7d07950a56c8"}}︡{"file":{"filename":"aa9913fd-8a7b-4d7f-855b-026534891fec.sage3d","uuid":"aa9913fd-8a7b-4d7f-855b-026534891fec"}}︡{"file":{"filename":"435c25c3-5b6f-4b9a-a2d7-0d7fac1ed823.sage3d","uuid":"435c25c3-5b6f-4b9a-a2d7-0d7fac1ed823"}}︡{"file":{"filename":"ab363509-c05a-4a69-8d1e-f0f2773a5a0c.sage3d","uuid":"ab363509-c05a-4a69-8d1e-f0f2773a5a0c"}}︡{"done":true}︡
+︠5c28ec33-82f6-4353-a191-26d317d0a698︠
 
 
 
