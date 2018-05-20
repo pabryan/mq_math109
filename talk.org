@@ -14,6 +14,14 @@
 
 #+LaTeX_HEADER: \titlegraphic{\includegraphics[width=\textwidth,height=.5\textheight]{img/multipostulate.jpg}}
 * Euclidean Geometry
+** The Fifth Postulate
+
+- Euclid's Elements has 5 axioms for geometry \pause
+- For many years, mathematicians tried to prove that the fifth axiom followed logically from the first four \pause
+- *They all failed!* \pause
+- This is because the fifth axiom is *logically independent* of the first four. \pause
+- As a consequence, non-Euclidean geometry and then Riemannian geometry were developed forming for example the theoretical foundation for Einstein's General Theory of Relativity.
+
 ** Euclid's Elements in Antiquity
 **** Image
      :PROPERTIES:
@@ -348,6 +356,12 @@ t_1 = C - AD/B, \quad t_2 = -D/B.
 * Non Euclidean Geometry
 ** Attempts to Prove the Fifth Postulate
 
+#+BEGIN_theorem
+It is *not* possible to prove the fifth posulate from the first four axioms alone. \pause
+#+END_theorem
+
+See projective and hyperbolic geometry below. \pause
+
 - Ptomely (Proclus showed Ptolemy implicitly used Playfair's postulate)
 - Proclus \pause
 - al-Gauhary (another implicit assumption) \pause
@@ -509,7 +523,11 @@ The sphere $\sphere$ is the set of triples,
 2. A straight line @@latex:{\color{red} cannot}@@ be extended past length of \(2\pi\) \pause
 3. Circles @@latex:{\color{red} don't exist}@@ for radius \(> \pi\) \pause
 4. All right angles @@latex:{\color{green} are}@@ equal to one another. \pause
-5. Parallel lines @@latex:{\color{red} don't exist}@@. All lines intersect.
+5. Parallel lines @@latex:{\color{red} don't exist}@@. All lines intersect. \pause
+
+
+- Most of Euclid's axioms are not satisfied! \pause
+- It is possible to modify this slightly to obtain *projective geometry* where the first four of Euclid's axioms are satisfied but parallel lines do not exist - regular parallel lines intersect "at infinity".
 
 ** Hyperbolic Geometry (Bolyai, Lobachevsky, Gauss)
 
@@ -571,5 +589,9 @@ The hyperbolic plane $\HH$ is the set of triples,
 2. Every straight line @@latex:{\color{green} can}@@ be extended indefinitely \pause
 3. Circles of any centre and any radius @@latex:{\color{green}exist}@@ and are @@latex:{\color{green}unique}@@ \pause
 4. All right angles @@latex:{\color{green} are}@@ equal to one another. \pause
-5. Parallel lines @@latex:{\color{green}exist}@@ but are @@latex:{\color{red} not unique}@@.
+5. Parallel lines @@latex:{\color{green}exist}@@ but are @@latex:{\color{red} not unique}@@. \pause
+
+
+- Therefore, the fifth postulate is *not* a logical consequence of the first four postulates. \pause
+- In fact, it is /independent/: the plane satisfies it, parallel lines *don't exist* in projective geometry, and hyperbolic geometry has *non-unique* parallel lines
 
