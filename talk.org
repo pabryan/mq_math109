@@ -591,6 +591,18 @@ The hyperbolic plane $\HH$ is the set of triples,
 4. All right angles @@latex:{\color{green} are}@@ equal to one another. \pause
 5. Parallel lines @@latex:{\color{green}exist}@@ but are @@latex:{\color{red} not unique}@@. \pause
 
+**** Image
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
+
+# #+ATTR_LATEX: :width 0.4\textwidth
+[[file:img/hyperbolic_axiom5.png]]
+
+**** Text
+     :PROPERTIES:
+     :BEAMER_col: 0.5
+     :END:
 
 - Therefore, the fifth postulate is *not* a logical consequence of the first four postulates. \pause
 - In fact, it is /independent/: the plane satisfies it, parallel lines *don't exist* in projective geometry, and hyperbolic geometry has *non-unique* parallel lines
