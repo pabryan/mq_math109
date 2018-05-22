@@ -127,11 +127,11 @@ from sage.plot.plot3d.transform import rotate_arbitrary
 t = var('t')
 x, y, z = var('x,y,z')
 f(x, y, z) = x^2 + y^2 - z^2 + 1
-H = p = implicit_plot3d(f,(x,-4,4),(y,-4,4),(z,1,4), mesh=True, opacity=0.8)
+H = p = implicit_plot3d(f,(x,-4,4),(y,-4,4),(z,1,4), mesh=True, opacity=0.6)
 
 x1 = point((0, 0, 1), size=10, color="red")
-x2 = point((1, 0, sqrt(2)), size=10, color="red")
-x3 = point((1/sqrt(3), -1/sqrt(3), sqrt(5/3)), size=10, color="red")
+x2 = point((2, 0, sqrt(5)), size=10, color="red")
+x3 = point((2/sqrt(3), 2/sqrt(3), sqrt(11/3)), size=10, color="red")
 
 def lorentz_boost(V):
     v = V.norm()
@@ -174,11 +174,11 @@ L6 = M12 * M16 * L1
 pL6 = parametric_plot3d(L6, (t, tmin+3/4, tmax+1/4), color="yellow", thickness=5)
 
 f1 = y
-P1 = implicit_plot3d(f1, (x, -2, 2), (y, -2, 2), (z,-1,3), color="gray")
+P1 = implicit_plot3d(f1, (x, -3, 3), (y, -3, 3), (z,-1,5), color="gray")
 q1 = M12*(L1.substitute(t=0))
 N1 = M12 * vector([0, 1, 0])
 f2 = N1[0] * x + N1[1] * y - N1[2]*z
-P2 = implicit_plot3d(f2, (x, -2, 2), (y, -2, 2), (z,-1,3), color="gray")
+P2 = implicit_plot3d(f2, (x, -3, 3), (y, -3, 3), (z,-1,5), color="gray")
 
 p1 = H + x1 + x2 + x3
 p2 = H + pL1 + pL2
@@ -186,23 +186,40 @@ p3 = H + pC1 + pC2
 p4 = H + pL1 + pL3 + pL4 + pL5
 p5 = H + pL1 + pL4 + pL6 + point(q1, size=10, color="black")
 p6 = H + pL1 + pL2 + P1 + P2
+︡0520c629-8b6c-48c7-a70b-41c5ce0157a0︡
+︠67ed8fb9-78e6-411d-a553-8a0ad60650cfs︠
 
-p1.show(frame=False, aspect_ratio=1)
-p2.show(frame=False, aspect_ratio=1)
-p3.show(frame=False, aspect_ratio=1)
-p4.show(frame=False, aspect_ratio=1)
-p5.show(frame=False, aspect_ratio=1)
-p6.show(frame=False, aspect_ratio=1)
+q1 = p1.rotate((0,0,1), pi/2)
+q2 = p2.rotate((1,1,0), pi/3)
+q3 = p3.rotate((1,1,0), pi/3)
+q4 = p4.rotate((1,1,0), pi/2)
+q5 = p5.rotate((1,1,0), pi/2)
+q6 = p6.rotate((0,0,1), 0)
 
-p1.save("img/hyperbolic_axiom1.png", frame=False, aspect_ratio=1)
-p2.save("img/hyperbolic_axiom2.png", frame=False, aspect_ratio=1)
-p3.save("img/hyperbolic_axiom3.png", frame=False, aspect_ratio=1)
-p4.save("img/hyperbolic_axiom4.png", frame=False, aspect_ratio=1)
-p5.save("img/hyperbolic_axiom5.png", frame=False, aspect_ratio=1)
-p6.save("img/hyperbolic_lines_planes.png", frame=False, aspect_ratio=1)
+q1.show(frame=False, aspect_ratio=1)
+q2.show(frame=False, aspect_ratio=1)
+q3.show(frame=False, aspect_ratio=1)
+q4.show(frame=False, aspect_ratio=1)
+q5.show(frame=False, aspect_ratio=1)
+q6.show(frame=False, aspect_ratio=1)
 
-︡42ed7719-d3a0-43e6-a300-ebb58fbe02e3︡{"file":{"filename":"cf065805-7e6a-4244-8966-80ea6811fe04.sage3d","uuid":"cf065805-7e6a-4244-8966-80ea6811fe04"}}︡{"file":{"filename":"ac967f9b-3a31-459d-836b-c32b4a8b0404.sage3d","uuid":"ac967f9b-3a31-459d-836b-c32b4a8b0404"}}︡{"file":{"filename":"53bcb445-f5bc-48f5-b1b4-7d07950a56c8.sage3d","uuid":"53bcb445-f5bc-48f5-b1b4-7d07950a56c8"}}︡{"file":{"filename":"aa9913fd-8a7b-4d7f-855b-026534891fec.sage3d","uuid":"aa9913fd-8a7b-4d7f-855b-026534891fec"}}︡{"file":{"filename":"435c25c3-5b6f-4b9a-a2d7-0d7fac1ed823.sage3d","uuid":"435c25c3-5b6f-4b9a-a2d7-0d7fac1ed823"}}︡{"file":{"filename":"ab363509-c05a-4a69-8d1e-f0f2773a5a0c.sage3d","uuid":"ab363509-c05a-4a69-8d1e-f0f2773a5a0c"}}︡{"done":true}︡
-︠5c28ec33-82f6-4353-a191-26d317d0a698︠
+q1.save("img/hyperbolic_axiom1.png", frame=False, aspect_ratio=1)
+q2.save("img/hyperbolic_axiom2.png", frame=False, aspect_ratio=1)
+q3.save("img/hyperbolic_axiom3.png", frame=False, aspect_ratio=1)
+q4.save("img/hyperbolic_axiom4.png", frame=False, aspect_ratio=1)
+q5.save("img/hyperbolic_axiom5.png", frame=False, aspect_ratio=1)
+q6.save("img/hyperbolic_lines_planes.png", frame=False, aspect_ratio=1)
+
+︡97f1302d-e755-4bf6-8ed0-b4e7437e53c1︡{"file":{"filename":"085b2f86-cabd-49c4-a63b-93e82667d98e.sage3d","uuid":"085b2f86-cabd-49c4-a63b-93e82667d98e"}}︡{"file":{"filename":"8ca0d0c9-cf4f-4888-a8b2-99d54deeed93.sage3d","uuid":"8ca0d0c9-cf4f-4888-a8b2-99d54deeed93"}}︡{"file":{"filename":"e5b2eb6e-3d48-45b7-9a79-a03622a0db90.sage3d","uuid":"e5b2eb6e-3d48-45b7-9a79-a03622a0db90"}}︡{"file":{"filename":"c44bd56c-a63c-4203-9e9e-3f67c334f518.sage3d","uuid":"c44bd56c-a63c-4203-9e9e-3f67c334f518"}}︡{"file":{"filename":"2fab5c01-de11-45cd-9909-1401f5feef51.sage3d","uuid":"2fab5c01-de11-45cd-9909-1401f5feef51"}}︡{"file":{"filename":"bb42f59c-b737-4fa8-bd49-6ee8d00018d5.sage3d","uuid":"bb42f59c-b737-4fa8-bd49-6ee8d00018d5"}}︡{"done":true}︡
+︠5c28ec33-82f6-4353-a191-26d317d0a698s︠
+p = p6
+
+q = p.rotate((1,1,0), pi/2)
+p.show(frame=False, aspect_ratio=1)
+q.show(frame=False, aspect_ratio=1)
+
+
+︡1cc2b8a6-a6e7-44c6-a7ab-6ff7d221e513︡{"file":{"filename":"bb42f59c-b737-4fa8-bd49-6ee8d00018d5.sage3d","uuid":"bb42f59c-b737-4fa8-bd49-6ee8d00018d5"}}︡{"file":{"filename":"95dfb53d-0149-4b01-8056-0bf990554d68.sage3d","uuid":"95dfb53d-0149-4b01-8056-0bf990554d68"}}︡{"done":true}︡
 
 
 
