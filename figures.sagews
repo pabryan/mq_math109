@@ -189,7 +189,7 @@ p6 = H + pL1 + pL2 + P1 + P2
 ︡0520c629-8b6c-48c7-a70b-41c5ce0157a0︡
 ︠67ed8fb9-78e6-411d-a553-8a0ad60650cfs︠
 
-q1 = p1.rotate((0,0,1), pi/2)
+q1 = p1.rotate((1,1,0), pi/3)
 q2 = p2.rotate((1,1,0), pi/3)
 q3 = p3.rotate((1,1,0), pi/3)
 q4 = p4.rotate((1,1,0), pi/2)
@@ -210,16 +210,9 @@ q4.save("img/hyperbolic_axiom4.png", frame=False, aspect_ratio=1)
 q5.save("img/hyperbolic_axiom5.png", frame=False, aspect_ratio=1)
 q6.save("img/hyperbolic_lines_planes.png", frame=False, aspect_ratio=1)
 
-︡97f1302d-e755-4bf6-8ed0-b4e7437e53c1︡{"file":{"filename":"085b2f86-cabd-49c4-a63b-93e82667d98e.sage3d","uuid":"085b2f86-cabd-49c4-a63b-93e82667d98e"}}︡{"file":{"filename":"8ca0d0c9-cf4f-4888-a8b2-99d54deeed93.sage3d","uuid":"8ca0d0c9-cf4f-4888-a8b2-99d54deeed93"}}︡{"file":{"filename":"e5b2eb6e-3d48-45b7-9a79-a03622a0db90.sage3d","uuid":"e5b2eb6e-3d48-45b7-9a79-a03622a0db90"}}︡{"file":{"filename":"c44bd56c-a63c-4203-9e9e-3f67c334f518.sage3d","uuid":"c44bd56c-a63c-4203-9e9e-3f67c334f518"}}︡{"file":{"filename":"2fab5c01-de11-45cd-9909-1401f5feef51.sage3d","uuid":"2fab5c01-de11-45cd-9909-1401f5feef51"}}︡{"file":{"filename":"bb42f59c-b737-4fa8-bd49-6ee8d00018d5.sage3d","uuid":"bb42f59c-b737-4fa8-bd49-6ee8d00018d5"}}︡{"done":true}︡
-︠5c28ec33-82f6-4353-a191-26d317d0a698s︠
-p = p6
+︡a00ef7c9-25ed-4dea-af7c-ef00c878d999︡{"file":{"filename":"5a5f03cc-8c2e-43d6-a16a-5bf31a32e7cb.sage3d","uuid":"5a5f03cc-8c2e-43d6-a16a-5bf31a32e7cb"}}︡{"file":{"filename":"8ca0d0c9-cf4f-4888-a8b2-99d54deeed93.sage3d","uuid":"8ca0d0c9-cf4f-4888-a8b2-99d54deeed93"}}︡{"file":{"filename":"e5b2eb6e-3d48-45b7-9a79-a03622a0db90.sage3d","uuid":"e5b2eb6e-3d48-45b7-9a79-a03622a0db90"}}︡{"file":{"filename":"c44bd56c-a63c-4203-9e9e-3f67c334f518.sage3d","uuid":"c44bd56c-a63c-4203-9e9e-3f67c334f518"}}︡{"file":{"filename":"2fab5c01-de11-45cd-9909-1401f5feef51.sage3d","uuid":"2fab5c01-de11-45cd-9909-1401f5feef51"}}︡{"file":{"filename":"bb42f59c-b737-4fa8-bd49-6ee8d00018d5.sage3d","uuid":"bb42f59c-b737-4fa8-bd49-6ee8d00018d5"}}︡{"done":true}︡
+︠5c28ec33-82f6-4353-a191-26d317d0a698︠
 
-q = p.rotate((1,1,0), pi/2)
-p.show(frame=False, aspect_ratio=1)
-q.show(frame=False, aspect_ratio=1)
-
-
-︡1cc2b8a6-a6e7-44c6-a7ab-6ff7d221e513︡{"file":{"filename":"bb42f59c-b737-4fa8-bd49-6ee8d00018d5.sage3d","uuid":"bb42f59c-b737-4fa8-bd49-6ee8d00018d5"}}︡{"file":{"filename":"95dfb53d-0149-4b01-8056-0bf990554d68.sage3d","uuid":"95dfb53d-0149-4b01-8056-0bf990554d68"}}︡{"done":true}︡
 
 
 
