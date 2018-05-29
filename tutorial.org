@@ -1,0 +1,49 @@
+#+TITLE: MATH109 - Semester 1 - 2018
+#+OPTIONS: toc:nil author:nil date:nil num:nil
+
+* Tutorial Questions: Non-Euclidean Geometry
+
+** Spherical Geometry
+
+The sphere \(\sphere^2 = \{(x, y, z) : x^2 + y^2 + z^2 = 1\} \subseteq \RR^3\) is the set of points at distance \(1\) from the origin \((0, 0, 0) \in \RR^3\).
+
+For \(p_1 = (x_1, y_1, z_1), p_2 = (x_2, y_2, z_2) \in \RR^3\) the dot-product is
+\[
+p_1 \cdot p_2 = x_1 x_2 + y_1 y_2 + z_1 z_2 \in \RR.
+\]
+The absolute value is
+\[
+\vert p\vert = \sqrt{p \cdot p} = \sqrt{x^2 + y^2 + z^2}.
+\]
+The cross-product is
+\[
+p_1 \times p_2 = (y_1 z_2 - y_2 z_1, -(x_1 z_2 - x_2 z_1), x_1 y_2 - x_2 y_1).
+\]
+It's always true that
+\[
+p_1 \cdot (p_1 \times p_2) = p_2 \cdot (p_1 \times p_2) = 0.
+\]
+The angle between \(p_1, p_2\) is defined by
+\[
+\cos \theta = \frac{p_1 \cdot p_2}{|p_1| |p_2|}.
+\]
+
+1. Let \(P \subseteq \RR^3\) be a plane through the origin given by the equation
+   \[
+   P = \{(x, y, z) : a x + b y + cz = 0\}
+   \]
+   with at least one of \(a,b,c\) non-zero.
+
+   Verify that \(C = P \cap \sphere^2\) is the unit circle in the plane \(P\) with centre the origin of \(P\).
+
+2. Let \(p_1 = (x_1, y_1, z_1), p_2 = (x_2, y_2, z_2) \in \sphere^2\) be two points on the sphere. Let \(n = p_1 \times p_2 = (a, b, c)\) with \(\times\) the cross-product. Show that \(p_1, p_2\) lie on the plane \(P_{12}\) defined by \(n\).
+
+3. Define the spherical distance, \(d_{\sphere^2} (p_1, p_2)\) between \(p_1\) and \(p_2\) to be the length of the circular arc \(C_{12}\) in the previous question. Show that
+   \[
+   d_{\sphere^2} (p_1, p_2) = \theta = \arccos(p_1 \cdot p_2)
+   \]
+   where \(\theta\) is the angle between \(p_1\) and \(p_2\).
+
+4. Show that Playfair's postulate does not hold. To do this show that any pair of great circles \(C_1, C_2\) intersect. /Hint/: Write \(C_1 = P_1 \cap \sphere^2\) and \(C_2 = P_2 \cap \sphere^2\) and show that \(P_1 \cap P_2\) is a line through the origin.
+
+5. Show that for \(0 \leq z_0 < 1\), the sets \(\sphere^2 \cap \{(x, y, z) : z = z_0\}\) are circles with centre the north pole \((0, 0, 1)\) are radius \(R = \arccos(z_0)\) where \(\arccos\) is the inverse of \(\cos\) taking values in \(0, \pi/2\). What about \(-1 < z_0 < 0\)?
